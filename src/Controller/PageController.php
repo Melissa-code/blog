@@ -17,8 +17,15 @@ class PageController extends AbstractController
      */
     public function home()
     {
-        return new Response("Bienvenue sur la page d'accueil ! ");
+        $message = "Bonjour, Bienvenue sur le Blog Symfony!";
+
+        return $this->render("home.html.twig", [
+            "message" => $message
+        ]);
     }
+
+
+
 
     /**
      * @Route("/contact", name="contact")

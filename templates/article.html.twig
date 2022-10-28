@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Détail d'un article
+{% endblock title %}
+
+
+{% block main %}
+
+    <h1>Détail d'un article</h1>
+
+    <article>
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.content }}</p>
+        <img src="{{ article.image }}" style="width:100px" alt="{{ article.title }}" />
+    </article>
+
+{% endblock main %}

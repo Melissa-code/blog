@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 ol, ul {
     list-style: none;
@@ -50,11 +51,19 @@ table {
     border-spacing: 0;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title {
+    text-align: center;
+    padding: 30px;
+}
 
 .header {
-    height: 100px;
+    height: 12vh;
     background-color: #588157;
-    color: white;
 }
 
 .menu {
@@ -83,4 +92,69 @@ table {
     list-style: none;
     padding-right: 30px;
     color: white;
+}
+
+.main {
+    height: 73vh;
+}
+
+.footer {
+    padding: 1vh;
+    height: 10vh;
+    background-color: #A3B18A;
+}
+
+.footer-politics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.footer-link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* home */
+
+.buddha-presentationimg {
+    display: flex;
+    justify-content: center;
+    background-color: #dad7cd;
+    padding: 50px;
+}
+
+.buddha-img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.buddha-presentation {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation-text-title {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 1rem;
+}
+
+.presentation-bg {
+    width: 70vw;
+    text-align: justify;
+}
+
+.desc-blog {
+    line-height: 30px;
 }

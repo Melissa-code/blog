@@ -1,18 +1,32 @@
 {% extends "base.html.twig" %}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ asset('assets/css/articles.css') }}">
+{% endblock css %}
+
 {% block title %}
     Détail d'un article
 {% endblock title %}
 
-
 {% block main %}
 
-    <h1>Détail d'un article</h1>
+    <section class="title">
+        <h1>Détail d'un article</h1>
+    </section>
 
-    <article>
-        <h2>{{ article.title }}</h2>
-        <p>{{ article.content }}</p>
-        <img src="{{ article.image }}" style="width:100px" alt="{{ article.title }}" />
-    </article>
+    <section class="article-bg">
+        <article class="article-buddha">
+            <div class="article-title">
+                <h2>{{ article.title }}</h2>
+            </div>
+            <div class="article-content">
+                <p>{{ article.content }}</p>
+            </div>
+            <div class="article-img">
+                <img class="buddha" src="{{ article.image }}" alt="{{ article.title }}" />
+            </div>
+        </article>
+    </section>
+
 
 {% endblock main %}

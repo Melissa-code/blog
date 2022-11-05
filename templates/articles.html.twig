@@ -5,21 +5,34 @@
 {% endblock css %}
 
 {% block title %}
-    Page d'articles
+    Liste des articles
 {% endblock title %}
 
 {% block main %}
-    <h1>Pages d'articles</h1>
+    <section class="title">
+        <h1>Liste des articles</h1>
+    </section>
 
-    {% for article in articles %}
-        {% if article.isPublished %}
-            <article>
-                <h2>{{ article.title }}</h2>
-                <p>{{ article.content }}</p>
-                <img src="{{ article.image }}" style="width:100px" alt="{{ article.title }}" />
-                <a href="{{ path("article", {"id":article.id}) }}">Voir l'article</a>
-            </article>
-        {% endif %}
-    {% endfor %}
+    <section class="list-articles">
+        {% for article in articles %}
+            {% if article.isPublished %}
+                <article class="article-buddha">
+                    <div class="article-title">
+                        <h2>{{ article.title }}</h2>
+                    </div>
+                    <div class="article-content">
+                        <p>{{ article.content }}</p>
+                    </div>
+                    <div class="article-img">
+                        <img class="buddha" src="{{ article.image }}" alt="{{ article.title }}" />
+                    </div>
+                    <div class="article-link">
+                        <a class="buddha-link" href="{{ path("article", {"id":article.id}) }}">Voir l'article</a>
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}
+    </section>
+
 
 {% endblock main %}

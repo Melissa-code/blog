@@ -17,7 +17,7 @@ class PageController extends AbstractController
      */
     public function home()
     {
-        $message = "Bonjour, Bienvenue sur le Blog Symfony!";
+        $message = "A la découverte des Buddhas";
 
         return $this->render("home.html.twig", [
             "message" => $message

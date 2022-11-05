@@ -31,10 +31,26 @@
     </nav>
 </header>
 
-<main>
+<main class="main">
     {% block main %}
     {% endblock main %}
 </main>
+
+<footer class="footer">
+    <div class="politics">
+        <ul class="footer-politics">
+            <li >
+                <a class="footer-link" href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a class="footer-link" href="#">Politique de confidentialité</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2022 C. Buddhas</p>
+    </div>
+</footer>
 
 
     <script src="{{ asset('assets/js/app.js') }}"></script>

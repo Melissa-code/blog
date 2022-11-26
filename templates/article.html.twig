@@ -22,8 +22,11 @@
             <div class="article-content">
                 <p>{{ article.content }}</p>
             </div>
+            <div class="article-content">
+                <p>Publié le : {{ article.publishedAt | date("d/m/Y") }}</p>
+            </div>
             <div class="article-img">
-                <img class="buddha" src="{{ article.image }}" alt="{{ article.title }}" />
+{#                <img class="buddha" src="{{ article.image }}" alt="{{ article.title }}" />#}
             </div>
         </article>
     </section>

@@ -94,6 +94,25 @@ h1 {
     color: white;
 }
 
+.search, .search-btn {
+    border-radius: 5px;
+    border: 1px solid #A3B18A;
+    font-size: 16px;
+}
+
+.search {
+    width: 400px;
+    height: 40px;
+}
+
+.search-btn {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #A3B18A;
+    color: #FFFFFF;
+}
+
 .main {
     height: 73vh;
 }

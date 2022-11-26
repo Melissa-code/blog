@@ -27,7 +27,13 @@
             <li>
                 <a class="menu-link" href="">Contact</a>
             </li>
+            <form action="{{ path("search") }}">
+                <input class="search" type="text" placeholder="Entrez une recherche" name="search">
+                <button class="search-btn" type="submit">Rechercher</button>
+            </form>
         </ul>
+
+
     </nav>
 </header>
 

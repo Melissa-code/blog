@@ -5,12 +5,12 @@
 {% endblock css %}
 
 {% block title %}
-    Liste des articles
+    Page des articles recherchés
 {% endblock title %}
 
 {% block main %}
     <section class="title">
-        <h1>Liste des articles</h1>
+        <h1>Résultats de la recherche</h1>
     </section>
 
     <section class="list-articles">
@@ -24,7 +24,7 @@
                         <p>{{ article.content }}</p>
                     </div>
                     <div class="article-img">
-{#                        <img class="buddha" src="{{ article.image }}" alt="{{ article.title }}" />#}
+                        {# <img class="buddha" src="{{ article.image }}" alt="{{ article.title }}" />#}
                     </div>
                     <div class="article-link">
                         <a class="buddha-link" href="{{ path("article", {"id":article.id}) }}">Voir l'article</a>
@@ -33,6 +33,5 @@
             {% endif %}
         {% endfor %}
     </section>
-
 
 {% endblock main %}
